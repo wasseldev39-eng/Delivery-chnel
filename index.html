@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>واصل ديليفري مان | Wassel Delivery</title>
+    <title>واصل ديليفري  | Wassel Delivery</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
@@ -32,12 +32,12 @@
             align-items: center;
         }
 
-        /* قسم القناة في الأعلى - Hero Section */
+        /* قسم الهيدر - Hero Section */
         .hero-telegram {
             width: 100%;
             background: linear-gradient(135deg, var(--dark-purple), var(--primary-purple));
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px 60px;
             text-align: center;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
@@ -45,10 +45,15 @@
             margin-bottom: 40px;
         }
 
-        .hero-telegram i {
-            font-size: 70px;
+        /* تنسيق اللوجو */
+        .logo {
+            width: 110px;
+            height: auto;
+            background: white;
+            padding: 12px;
+            border-radius: 25px;
             margin-bottom: 20px;
-            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .hero-telegram h1 { font-size: 1.8rem; margin-bottom: 10px; }
@@ -72,7 +77,6 @@
             background: #eee1ff;
         }
 
-        /* قسم أزرار المعلومات في الأسفل */
         .container {
             width: 100%;
             max-width: 600px;
@@ -110,7 +114,7 @@
         .info-btn:hover {
             background: #fdfcff;
             border-color: var(--primary-purple);
-            transform: translateX(-5px); /* حركة خفيفة جهة اليمين */
+            transform: translateX(-5px);
         }
 
         .info-btn div {
@@ -136,21 +140,24 @@
             font-size: 0.8rem;
         }
 
-        /* توافق الهاتف */
         @media (max-width: 480px) {
-            .hero-telegram { padding: 50px 15px; }
+            .hero-telegram { padding: 40px 15px; }
             .hero-telegram h1 { font-size: 1.5rem; }
             .info-btn { padding: 15px; }
+            .logo { width: 90px; }
         }
     </style>
 </head>
 <body>
 
     <div class="hero-telegram">
-        <i class="fab fa-telegram"></i>
+        <img src="https://wasseldz.com/storage/app/public/business/2025-07-19-687bb1f5ee9c9.png" alt="Wassel Logo" class="logo">
+        
         <h1>قناة المندوبين الرسمية</h1>
         <p>اشترك لتصلك أحدث الطلبات والتحديثات فوراً</p>
-        <a href="https://t.me/+GrtsuCQZJvJlMmNk" class="btn-join" target="_blank">انضم الآن للقناة</a>
+        <a href="https://t.me/+GrtsuCQZJvJlMmNk" class="btn-join" target="_blank">
+            <i class="fab fa-telegram-plane"></i> انضم الآن للقناة
+        </a>
     </div>
 
     <div class="container">
@@ -191,7 +198,7 @@
         </div>
 
         <footer>
-            &copy; 2026 واصل ديليفري مان - الجزائر
+            &copy; 2026 واصل ديليفري  - الجزائر
         </footer>
     </div>
 
